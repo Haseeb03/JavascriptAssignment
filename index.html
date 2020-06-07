@@ -434,18 +434,69 @@
         else{
             document.write("Wrong guessed");
         }
-    </script>
+    </script>   
     <h3>Question8</h3>
     <script>
+        var gnum=parseInt(prompt("Enter any number to check divisibility by 3"));
+        if(gnum%3==0){
+            document.write(gnum+" is divisible by 3");
+        }
+        else{
+            document.write(gnum+" is not divisible by 3")
+        }
     </script>
     <h3>Question9</h3>
     <script>
+        var checknum=parseInt(prompt("Enter any number to check even or odd"));
+        if(checknum%2==0){
+            document.write(checknum+" is even number");
+        }
+        else{
+            document.write(checknum+" is odd number")
+        }
     </script>
     <h3>Question10</h3>
     <script>
+        var temp=parseInt(prompt("Enter temperature"));
+        if(temp>40){
+            document.write("It is too hot outside");
+        }
+        else if(temp>30){
+            document.write("The Weather today is Normal");
+        }
+        else if(temp>20){
+            document.write("Today’s Weather is cool");
+        }
+        else if(temp<10){
+            document.write("OMG! Today’s weather is so Cool");
+        }
+        else{
+            document.write("Sorry, you entered wrong");
+        }
     </script>
     <h3>Question11</h3>
     <script>
+        var fnum=parseInt(prompt("Enter First number"));
+        var snum=parseInt(prompt("Enter Second number"));
+        var operator=prompt("Enter Operator");
+        if(operator==="+"){
+            document.write(fnum+" + "+snum+" = "+(fnum+snum))
+        }
+        else if(operator==="-"){
+            document.write(fnum+" - "+snum+" = "+(fnum-snum))
+        }
+        else if(operator==="*"){
+            document.write(fnum+" * "+snum+" = "+(fnum*snum))
+        }
+        else if(operator==="/"){
+            document.write(fnum+" / "+snum+" = "+(fnum/snum))
+        }
+        else if(operator==="%"){
+            document.write(fnum+" % "+snum+" = "+(fnum%snum))
+        }
+        else{
+            document.write("Wrong Input");
+        }
     </script>
 </body>
 </html>
