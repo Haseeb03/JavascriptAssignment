@@ -396,34 +396,44 @@
         var per=((marks1+marks2+marks3)/totalmarks)*100;
         document.write("Percentege: "+per+"<br>");
         var marksobtained,grade,remarks;
-        document.write("Total Marks|Marks Obtained|Percentage|Grade|Remarks<br>")
         if(per>=80){
             marksobtained=marks1+marks2+marks3;
             grade="A-one";
             remarks="Excellent";
-            document.write(totalmarks+"|"+marksobtained+"|"+per+"|"+grade+"|"+remarks+"<br>");
+            document.write("Total Marks: "+totalmarks+"<br>Marks Obtained: "+marksobtained+"<br>Percentege: "+per+"<br>Grade: "+grade+"<br>Remarks: "+remarks+"<br>");
         }
         else if(per>=70){
             marksobtained=marks1+marks2+marks3;
             grade="A";
             remarks="Good";
-            document.write(totalmarks+"|"+marksobtained+"|"+per+"|"+grade+"|"+remarks+"<br>");
+            document.write("Total Marks: "+totalmarks+"<br>Marks Obtained: "+marksobtained+"<br>Percentege: "+per+"<br>Grade: "+grade+"<br>Remarks: "+remarks+"<br>");
         }
         else if(per>=80){
             marksobtained=marks1+marks2+marks3;
             grade="B";
             remarks="You need to improve";
-            document.write(totalmarks+"|"+marksobtained+"|"+per+"|"+grade+"|"+remarks+"<br>");
+            document.write("Total Marks: "+totalmarks+"<br>Marks Obtained: "+marksobtained+"<br>Percentege: "+per+"<br>Grade: "+grade+"<br>Remarks: "+remarks+"<br>");
         }
         else{
             marksobtained=marks1+marks2+marks3;
             grade="F";
             remarks="Sorry";
-            document.write(totalmarks+"|"+marksobtained+"|"+per+"|"+grade+"|"+remarks+"<br>");
+            document.write("Total Marks: "+totalmarks+"<br>Marks Obtained: "+marksobtained+"<br>Percentege: "+per+"<br>Grade: "+grade+"<br>Remarks: "+remarks+"<br>");
         }
     </script>
     <h3>Question7</h3>
     <script>
+        secretnumber=7;
+        var guess=parseInt(prompt("Guess number between 1-10"));
+        if(guess===secretnumber){
+            document.write("Bingo! Correct answer");
+        }
+        else if(guess+1===secretnumber){
+            document.write("Close enough to the correct answer");
+        }
+        else{
+            document.write("Wrong guessed");
+        }
     </script>
     <h3>Question8</h3>
     <script>
