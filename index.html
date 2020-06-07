@@ -350,15 +350,15 @@
     </script>
     <h3>Question5</h3>
     <script>
-        a. var a = 4;
+        var a = 4;
         if (++a === 5){ 
             alert("given condition for variable a is true"); 
         }
-        b. var b = 82;
+        var b = 82;
         if (b++ === 83){ 
             alert("given condition for variable b is true"); 
         } 
-        c. var c = 12; 
+        var c = 12; 
         if (c++ === 13){ 
             alert("condition 1 is true"); 
         } 
@@ -371,24 +371,56 @@
         if(c === 14){ 
             alert("condition 4 is true"); 
         }
-        d. var materialCost = 20000;
+        var materialCost = 20000;
         var laborCost = 2000; 
         var totalCost = materialCost + laborCost; 
         if (totalCost === laborCost + materialCost){ 
             alert("The cost equals"); 
         } 
-        e. if (true){ 
+        if (true){ 
             alert("True"); 
         } 
         if (false){ 
             alert("False"); 
         }
-        f. if("car" < "cat"){ 
+        if("car" < "cat"){ 
             alert("car is smaller than cat"); 
         }
     </script>
     <h3>Question6</h3>
     <script>
+        var marks1=parseFloat(prompt("Enter sub1 marks"));
+        var marks2=parseFloat(prompt("Enter sub2 marks"));
+        var marks3=parseFloat(prompt("Enter sub3 marks"));
+        var totalmarks=parseFloat(prompt("Enter Total marks"));
+        var per=((marks1+marks2+marks3)/totalmarks)*100;
+        document.write("Percentege: "+per+"<br>");
+        var marksobtained,grade,remarks;
+        document.write("Total Marks|Marks Obtained|Percentage|Grade|Remarks<br>")
+        if(per>=80){
+            marksobtained=marks1+marks2+marks3;
+            grade="A-one";
+            remarks="Excellent";
+            document.write(totalmarks+"|"+marksobtained+"|"+per+"|"+grade+"|"+remarks+"<br>");
+        }
+        else if(per>=70){
+            marksobtained=marks1+marks2+marks3;
+            grade="A";
+            remarks="Good";
+            document.write(totalmarks+"|"+marksobtained+"|"+per+"|"+grade+"|"+remarks+"<br>");
+        }
+        else if(per>=80){
+            marksobtained=marks1+marks2+marks3;
+            grade="B";
+            remarks="You need to improve";
+            document.write(totalmarks+"|"+marksobtained+"|"+per+"|"+grade+"|"+remarks+"<br>");
+        }
+        else{
+            marksobtained=marks1+marks2+marks3;
+            grade="F";
+            remarks="Sorry";
+            document.write(totalmarks+"|"+marksobtained+"|"+per+"|"+grade+"|"+remarks+"<br>");
+        }
     </script>
     <h3>Question7</h3>
     <script>
