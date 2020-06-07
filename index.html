@@ -240,7 +240,7 @@
         totalEat=((maxAge-currAge)*365)*amountPerDay;
         document.write("You will need "+totalEat+" to last you until the ripe old age of "+maxAge);
     </script>
-    <h1>Chapter6:Math expressions</h1>
+    <h1>Chapter6-9:Math expressions</h1>
     <h3>Question1</h3>
     <script>
         var number=21;
@@ -299,13 +299,111 @@
         var marks1=parseFloat(prompt("Enter "+sub1+" marks"));
         var marks2=parseFloat(prompt("Enter "+sub2+" marks"));
         var marks3=parseFloat(prompt("Enter "+sub3+" marks"));
-        document.write("Subject    Total Marks    Obtained Marks    Percentage<br>");
+        document.write("Subject|Total Marks|Obtained Marks|Percentage<br>");
         document.write(sub1+" | "+EachSubMarks+" | "+marks1+" | "+(marks1/EachSubMarks*100)+"%<br>");
         document.write(sub2+" | "+EachSubMarks+" | "+marks2+" | "+(marks2/EachSubMarks*100)+"%<br>");
         document.write(sub3+" | "+EachSubMarks+" | "+marks3+" | "+(marks3/EachSubMarks*100)+"%<br>");
     </script><h3>Question7</h3>
     <script>
         document.write("Not available in the provided pdf");
+    </script>
+    <h1>Chapter9-11:User Input & Conditional Statement</h1>
+    <h3>Question1</h3>
+    <script>
+        var city=prompt("Enter city name");
+        if(city==="karachi"){
+            alert("Welcome to city of lights");
+        }
+    </script>
+    <h3>Question2</h3>
+    <script>
+        var gender=prompt("Enter your gender");
+        if(gender==="male"){
+            alert("Good Morning Sir");
+        }
+        else{
+            alert("Good Morning Ma'am");
+        }
+    </script>
+    <h3>Question3</h3>
+    <script>
+        var signal=prompt("Road Signal Color?");
+        if(signal==="red"){
+            alert("Must stop");
+        }
+        else if(signal==="yellow"){
+            alert("Ready to move");
+        }
+        else if(signal==="green"){
+            alert("Move now");
+        }
+        else{
+            alert("You entered wrong");
+        }
+    </script>
+    <h3>Question4</h3>
+    <script>
+        var fuel=prompt("Remaining fuel in Car?");
+        if(parseFloat(fuel)<0.25){
+            alert("Please refill the fuel in your car");
+        }
+    </script>
+    <h3>Question5</h3>
+    <script>
+        a. var a = 4;
+        if (++a === 5){ 
+            alert("given condition for variable a is true"); 
+        }
+        b. var b = 82;
+        if (b++ === 83){ 
+            alert("given condition for variable b is true"); 
+        } 
+        c. var c = 12; 
+        if (c++ === 13){ 
+            alert("condition 1 is true"); 
+        } 
+        if (c === 13){ 
+            alert("condition 2 is true"); 
+        } 
+        if (++c < 14){ 
+            alert("condition 3 is true"); 
+        } 
+        if(c === 14){ 
+            alert("condition 4 is true"); 
+        }
+        d. var materialCost = 20000;
+        var laborCost = 2000; 
+        var totalCost = materialCost + laborCost; 
+        if (totalCost === laborCost + materialCost){ 
+            alert("The cost equals"); 
+        } 
+        e. if (true){ 
+            alert("True"); 
+        } 
+        if (false){ 
+            alert("False"); 
+        }
+        f. if("car" < "cat"){ 
+            alert("car is smaller than cat"); 
+        }
+    </script>
+    <h3>Question6</h3>
+    <script>
+    </script>
+    <h3>Question7</h3>
+    <script>
+    </script>
+    <h3>Question8</h3>
+    <script>
+    </script>
+    <h3>Question9</h3>
+    <script>
+    </script>
+    <h3>Question10</h3>
+    <script>
+    </script>
+    <h3>Question11</h3>
+    <script>
     </script>
 </body>
 </html>
